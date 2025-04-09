@@ -4,7 +4,8 @@ import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
 import { Link } from "react-router-dom"
 import SocialLinks from "./SocialLinks"
-import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter'
+import TextTransition, { presets } from 'react-text-transition'
 
 
 const Hero = () => {
