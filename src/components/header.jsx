@@ -16,7 +16,7 @@ const Header = ({ scrollY }) => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    
   ]
 
   return (
@@ -55,7 +55,9 @@ const Header = ({ scrollY }) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <Link to={"/contact"}>
             Get In Touch
+            </Link>
           </motion.a>
         </nav>
 
@@ -84,9 +86,9 @@ const Header = ({ scrollY }) => {
                 {link.name}
               </a>
             ))}
-            <a href="#contact" className="btn btn-primary text-center" onClick={() => setIsOpen(false)}>
+            <Link to="/contact" className="btn btn-primary text-center" onClick={() => setIsOpen(false)}>
               Get In Touch
-            </a>
+            </Link>
           </div>
         </motion.div>
       )}

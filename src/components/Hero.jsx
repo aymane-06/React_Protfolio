@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
 import { Link } from "react-router-dom"
 import SocialLinks from "./SocialLinks"
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const Hero = () => {
@@ -25,21 +26,30 @@ const Hero = () => {
             Hello, I'm
           </motion.span>
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            Himame Aymane
-          </motion.h1>
-          <motion.h2
-            className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 font-light"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-          >
-            Full Stack Developer
-          </motion.h2>
+  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3 }}
+>
+  Himame Aymane
+</motion.h1>
+
+<motion.p
+  className="text-lg md:text-xl text-gray-700 dark:text-gray-300"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.6 }}
+>
+  <Typewriter
+    words={['Full Stack Developer', 'Tech Lover', 'Problem Solver', 'Creative Thinker', 'Lifelong Learner','let\'s build something amazing together!']}
+    loop={0}
+    cursor
+    cursorStyle="|"
+    typeSpeed={70}
+    deleteSpeed={50}
+    delaySpeed={1500}
+  />
+</motion.p>
           <motion.p
             className="text-gray-600 dark:text-gray-400 mb-8 max-w-lg leading-relaxed"
             initial={{ opacity: 0 }}
@@ -66,8 +76,9 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
             </motion.div>
             <motion.a 
-              href="#" 
+              href="/public/Aymane HIMAME - CV.pdf" 
               className="btn btn-secondary flex justify-center items-center px-8 py-3 font-medium rounded-lg border-2 border-teal-600 text-teal-600 hover:bg-teal-50 dark:hover:bg-gray-800 transition-all duration-300 shadow-md w-full sm:w-auto"
+              target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
