@@ -50,7 +50,6 @@ const Header = ({ scrollY }) => {
             </motion.a>
           ))}
           <motion.a
-            href="#contact"
             className="btn btn-primary text-sm"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

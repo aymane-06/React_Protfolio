@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react"
 import SocialLinks from "./SocialLinks"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -66,24 +67,24 @@ const Footer = () => {
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <Link to="/" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <Link to="/#about" className="text-gray-400 hover:text-white text-sm transition-colors">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#projects" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <Link to="/projects" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-white text-sm transition-colors">
+                <Link to="/contact" className="text-gray-400 hover:text-white text-sm transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

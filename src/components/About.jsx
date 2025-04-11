@@ -11,7 +11,7 @@ const About = () => {
     { name: "UI/UX Design", icon: <Palette size={24} />, description: "Figma, Sketch" },
     { name: "Outils", icon: <Star size={24} />, description: "Git, Postman, LucidChart, Jira, Draw.io" },
     { name: "Web Performance", icon: <Globe size={24} />, description: "Optimization, SEO, Analytics" },
-    { name: "Langages", icon: <Braces size={24} />, description: "JavaScript (ES6), JQuery, TypeScript" },
+    { name: "Langages", icon: <Braces size={24} />, description: "PHP, JavaScript (ES6), JQuery, TypeScript" },
     { name: "Work Approach", icon: <Handshake size={24} />, description: "Agile, Scrum" },
   ]
 
@@ -61,17 +61,16 @@ const About = () => {
               Who I Am
             </h3>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              I'm a passionate Full Stack Developer with over 5 years of experience in building web applications. I
-              specialize in creating responsive, user-friendly interfaces and robust backend systems.
+            Hi, I'm Aymane Himame, a passionate Full Stack Web Developer with a knack for creating clean, efficient, and scalable web applications. I specialize in building dynamic and responsive websites using modern technologies like React, PHP, Laravel, and TailwindCSS.
+
+With a strong foundation in Agile methodologies and experience in both front-end and back-end development, I am adept at taking projects from concept to completion, whether it's crafting user-friendly interfaces or implementing secure server-side logic. I thrive in collaborative environments, bringing creative solutions to the table while ensuring code quality and maintainability.
+
+On this portfolio, you'll find a selection of my projects showcasing my skills in UI/UX design, database management, API development, and custom web solutions. My goal is always to build user-centered, visually appealing, and high-performance websites.
+
+Feel free to explore my work and get in touch!
             </p>
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              My journey in web development started when I was in college, and since then, I've worked with various
-              technologies and frameworks to deliver high-quality solutions for clients across different industries.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new technologies to
-              stay updated with the latest trends in the industry.
-            </p>
+            
+            
           </motion.div>
 
           <motion.div
