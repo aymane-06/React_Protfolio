@@ -104,7 +104,7 @@ const Hero = () => {
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-blue-500 rounded-full transform rotate-12 scale-[0.85] blur-sm"></div>
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
-              <img src="/src/assets/profile_pic.jfif" alt="Himame Aymane" className="w-full h-full object-cover" />
+              <img src="./src/assets/profile_pic.jfif" alt="Himame Aymane" className="w-full h-full object-cover" />
             </div>
           </div>
         </motion.div>
